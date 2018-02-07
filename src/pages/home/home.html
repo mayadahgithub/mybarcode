@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Barcode scanner!</h2>
+  <button ion-button (click)="scan()">scan</button>
+
+   <ion-list> 
+
+  <ion-item>
+<h1>cancelled: {{data.cancelled}}</h1>
+<h1>format: {{data.format}} </h1>
+<h1>text: {{data.text}} </h1>
+</ion-item>
+
+  <ion-item>    
+  <ion-input type="text" [(ngModel)]="encodemyData"></ion-input>    
+    </ion-item>
+
+     <ion-item>
+      <button ion-button (click)="encodeData()">scan</button>     
+      </ion-item>
+        
+
+
+ </ion-list> 
+ 
+</ion-content>
